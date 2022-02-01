@@ -15,7 +15,7 @@ html {
 
 .container{
     width: 100%;
-    height: 100%;
+    height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -25,7 +25,6 @@ html {
 img {
     width: 100%;
     height: 100%;
-
 }
 
 
@@ -43,10 +42,28 @@ img {
     color: crimson;
 }
 
+
+.hero-button{
+    margin: 20px;
+    padding: 10px 40px ;
+    color:white;
+    background-color: transparent;
+    border: 2px crimson solid;
+    border-radius: 5px;
+    display: inline-block;
+    font-size: 2rem;
+    transition: 1s ease background-color ;
+}
+
+
+.hero-button:hover{
+    background-color: crimson;
+}
+
 /* hero section */
 
 #hero {
-    height: 100vh;
+    height: 100%;
     width: 100%;
     background-image: url('/img/hero-bg.png');
     background-position: top center;
@@ -127,22 +144,6 @@ a{
 }
 
 
-#hero .hero-button{
-    margin: 20px;
-    padding: 10px 40px ;
-    color:white;
-    background-color: transparent;
-    border: 2px crimson solid;
-    border-radius: 5px;
-    display: inline-block;
-    font-size: 2rem;
-    transition: 1s ease background-color ;
-}
-
-
-#hero .hero-button:hover{
-    background-color: crimson;
-}
 
 /* end hero section */
 
@@ -151,48 +152,46 @@ a{
 /* service section */
 
 #services{
-    margin: 20px auto;
+    margin: 0px auto;
 }
-
 
 #services .services{
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
-}
+} 
 
 .services-top {
-    max-width: 800px;
+    max-width: 500px;
 }
-
-
 
 .services-top p{
-    margin:15px 40px;
+    margin:10px 40px;
     text-align: center;
-    font-size: 2rem;
+    font-size: 1.3rem;
     font-weight: 300;
 }
-
 
 .services-bottom{
     margin: 20px 40px;
 }
 
-
 .service-item {
     border-radius: 10px;
+    width: 80%;
+    margin: 0 auto;
     padding: 20px;
-    margin: 0px 50px ;
     box-sizing:border-box;
     margin-bottom: 10px;
     background-image: url("/img/img-1.png");
     background-position: top center;
     background-size: cover;
-    height: fit-content;
     overflow: hidden;
     position: relative;
     z-index: 1;
 }
-
 
 .service-item::before{
     content: "";
@@ -206,30 +205,23 @@ a{
     z-index: -1;
 }
 
-
 .card-title{
-    padding: 16px;
+    padding-bottom: 10px;
     color: white;
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 500;
-    word-spacing: 1rem;
 }
 
-
 .card-description{
-    padding: 0 20px;
-    margin-bottom: 10px;
-    
     color: white;
-    font-size: 1.7rem;
+    font-size: 1.5rem;
     text-align: start;
     font-weight: 300;
-    word-spacing: 1rem;
 }
 
 .service-icon{
-    width: 80px;  
-    margin: 0px 10px;
+    width: 40px;  
+    margin-bottom: 20px 0px;
 }
 
 
@@ -300,7 +292,8 @@ a{
 
 
 .project_img{
-    height: 300px;
+    /* height: 300px; */
+    flex-basis: 50%;
     position: relative;
     overflow: hidden;
 }
@@ -350,6 +343,69 @@ a{
 
 
 
+/* about section style */
+
+#about .about{
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+
+#about .about-img{
+    width: 170px;
+
+    border-radius: 10px;
+    border: 5px white solid;
+    position: relative;
+}
+
+
+#about .about-img::after{
+    content: '';
+    width: 80%;
+    height: 80%;
+    position: absolute;
+    left: -30px;
+    z-index: -1;
+    bottom: -20px;
+    border: 10px crimson solid;
+}
+
+#about .hero-button{
+    color: crimson;
+}
+
+
+#about .about-info{
+    width: 80%;
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#about h2{
+    font-weight: 500;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    font-size: 2rem;
+    letter-spacing: .32rem;
+}
+
+
+#about p{
+    font-weight: 400;
+    max-width: 500px;
+    padding-bottom: 10px;
+    font-size: 1.4rem;
+    line-height: 2rem;
+    text-align: center;
+}
+
+/* about section style */
 
 
 
