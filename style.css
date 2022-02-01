@@ -28,6 +28,21 @@ img {
 
 }
 
+
+
+.section_title{
+    font-size: 4rem;
+    font-weight: 500;
+    letter-spacing: .5rem;
+    text-align: center;
+}
+
+
+
+.section_title span{
+    color: crimson;
+}
+
 /* hero section */
 
 #hero {
@@ -56,15 +71,14 @@ img {
     height: 100%;
     opacity: .3;
 }
+
 #hero h1:nth-of-type(1){
     animation-delay: .5s;
 }
 
-
 #hero h1:nth-of-type(2){
     animation-delay: 1.5s;
 }
-
 
 #hero h1:nth-of-type(3){
     animation-delay: 2.5s;
@@ -84,7 +98,6 @@ img {
     animation-duration: 1s;
     animation-fill-mode: forwards;
 }
-
 
 #hero h1:nth-of-type(2):after{
     animation-delay: 1s;
@@ -150,18 +163,7 @@ a{
     max-width: 800px;
 }
 
-.services-top h1{
-    font-size: 4rem;
-    font-weight: 500;
-    letter-spacing: .5rem;
-    text-align: center;
-}
 
-
-
-.services-top h1 span{
-    color: crimson;
-}
 
 .services-top p{
     margin:15px 40px;
@@ -229,6 +231,122 @@ a{
     width: 80px;  
     margin: 0px 10px;
 }
+
+
+/* service section end */
+
+
+/* projects section style */
+
+#projects .projects{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 20px auto;
+}
+
+.projects_top{
+    max-width: 1200px;
+    margin: 40px auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.projects-bottom {
+    width: 80%;
+    margin: 0px auto;
+}
+
+
+.project_item {
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: stretch;
+}
+
+.project_info {
+    background-color:black;
+    opacity: .7;
+    color: white;
+    padding: 20px;  
+    display: flex;
+    flex-basis: 50%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+
+.project_name {
+    font-size: 3rem;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+
+.project_sub{
+    font-size: 1.5rem;
+    font-weight: 400;
+    padding: 5px 0px;
+}
+
+
+
+.project_img{
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project_img img{
+   width: 100%;
+   height: 100%;
+   position: relative;
+   z-index: -1;
+   transition:1s ease transform;
+}
+
+
+.project_img::after{
+    content: '';
+    background-color: black;
+    opacity: .5;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+
+
+.project_item:hover img{
+    transform: scale(1.1);
+}
+
+
+
+
+
+.project_info p{
+    font-size: 1.3rem;
+    word-spacing: 10px;
+    text-align: start;
+    margin-bottom: 20px;
+}
+
+
+
+
+
+/* projects section style */
 
 
 
