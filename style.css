@@ -235,6 +235,7 @@ a{
 /* projects section style */
 
 #projects .projects{
+    max-width: 1200px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -563,7 +564,6 @@ a{
     }
 
   .services-bottom{
-        display: grid;
         grid-template-columns: 1fr 1fr;
     }
 
@@ -632,10 +632,15 @@ a{
         width: 70px;
     }
     
+}
 
-    
-    
-    
+
+@media only screen and (min-width: 1200px){
+
+    .services-bottom{
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+
 }
 
 
