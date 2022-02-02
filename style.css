@@ -478,6 +478,72 @@ a{
 
 /* contact info end*/
 
+/* footer */
+#footer {
+    background-color: black;
+    opacity: .7;
+    width: 100;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.social-links{ 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.brand{
+    color: white;
+    margin: 10px 0px;
+    text-align: center;
+    font-size: 3rem;
+    text-transform: uppercase;
+    font-weight: 500;
+}
+
+.complete{
+    color: white;
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-align: center;
+   
+}
+
+#footer img{
+    filter: grayscale(1);
+    transition: .5s ease filter;
+    padding: 0px 5px;
+}
+
+
+#footer img:hover{
+    filter: none;
+}
+
+.brand span{
+    color: crimson;
+
+}
+
+
+
+.copy-right {
+    color: white;
+    text-align: center;
+    font-size: 1rem;
+    margin: 10px;
+}
+
+
+/* footer end */
+
+ 
+
 
 /* animation */
 @keyframes text_reveal{
