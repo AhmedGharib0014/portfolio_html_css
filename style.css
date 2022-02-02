@@ -159,6 +159,7 @@ a{
 #services .services{
     margin-top: 40px;
     display: flex;
+   
     justify-content: center;
     align-items: center;
     flex-direction: column;
@@ -177,6 +178,9 @@ a{
 
 .services-bottom{
     margin: 20px 40px;
+    display: grid;
+    grid-template-columns: 1;
+    gap: 10px;
 }
 
 .service-item {
@@ -185,7 +189,6 @@ a{
     margin: 0 auto;
     padding: 20px;
     box-sizing:border-box;
-    margin-bottom: 10px;
     background-image: url("/img/img-1.png");
     background-position: top center;
     background-size: cover;
@@ -412,7 +415,7 @@ a{
 /* contact info */
 
 .contact {
-    max-width: 1200px;
+   
     margin: 100px auto;
     display: flex;
     flex-direction: column;
@@ -421,12 +424,16 @@ a{
 }
 
 .contact-items {
-    display: flex;
-    align-items: center ;
+    display: grid;
+    grid-template-columns: 1fr;
     justify-content: center;
-    flex-direction: column;
-    width: 80%;
-    margin: 40px auto;
+    padding: 20px;
+    gap: 10px 20px;
+    /* align-items: center ;
+    justify-content: center;
+    flex-direction: column; */
+    /* width: 80%; */
+    /* margin: 0px ; */
 }
 
 
@@ -438,8 +445,7 @@ a{
 
 .contact-item{
     display: flex;
-    width: 80%;
-    padding: 30px;
+    padding: 20px;
     margin-bottom: 20px;
     flex-direction: column;
     border-radius: 10px;
@@ -466,13 +472,13 @@ a{
 
 .info-title{
     font-weight: 500;
-    font-size: 2.5rem;
+    font-size: 2rem;
     padding: 10px 0px;
 }
 
 .info-details {
     font-weight: 400;
-    font-size: 1.5rem;
+    font-size: 1rem;
 
 }
 
@@ -541,6 +547,97 @@ a{
 
 
 /* footer end */
+
+
+/* tablet view */
+
+@media only screen and (min-width: 768px) {
+    #hero h1{
+       font-size: 5rem;
+       font-weight: 600;
+    }
+
+    .hero-button{
+        font-size: 3rem;
+        padding: 30px 50px;
+    }
+
+  .services-bottom{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .service-item {
+        width: 100%;
+    }
+
+    .project_item{
+        margin: 0;
+        flex-direction: row;
+        height: 350px;
+        width: 100%;
+        border-radius: 0;
+
+    }
+
+    .project_item:nth-of-type(even){
+        flex-direction: row-reverse;
+    }
+    .projects-bottom{
+        width: 100%;
+        margin: 0;
+    }
+
+    #about .about{
+        flex-direction: row;
+        margin:  50px;
+    }
+
+    #about .about-img{
+        height: 400px;
+        width: 350px;
+    }
+
+
+    #about .about-info{
+        margin: 0px 50px;
+        align-items: flex-start;
+    }
+
+    #about h2{
+        font-size: 3rem;
+        text-align: start;
+    }
+
+
+    #about p{
+        font-size: 1rem;
+        text-align: start;
+    }
+
+    #about .hero-button{
+        font-size: 2rem;
+    }
+
+    .contact-items{
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+    .contact-item {
+        display: flex;
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .contact-icon {
+        width: 70px;
+    }
+    
+
+    
+    
+    
+}
+
 
  
 
