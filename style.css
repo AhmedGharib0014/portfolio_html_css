@@ -61,6 +61,107 @@ img {
     background-color: crimson;
 }
 
+
+/* header section */
+#header {
+    margin: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    min-height: 2rem;
+}
+
+#header::before{
+    content: '';
+    position: absolute;
+    background-color: black;
+    opacity: .3;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    min-height: 2rem;
+}
+
+#header .header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+}
+#header .brand{
+    margin-left: 20px;
+}
+
+
+.header-list{
+    position: absolute;
+    z-index: 1100;
+    background-color: black;
+    height: 100vh;
+    color: white;
+    width: 100vw;
+    /* left: 100%; */
+    top: 0;
+    
+}
+
+.items {
+    display: flex;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+.items a{
+    margin-bottom: 20px;
+    font-weight: 500;
+    font-size: 2rem;
+    color: white;
+    display: block;
+    text-decoration: none;
+}
+.items ul{
+    list-style: none;
+    position: relative;
+}
+
+.items li::after{
+    content: attr(li-data);
+    color: white;
+    opacity: .1;
+    letter-spacing: 500px;
+    font-size: 7rem;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    z-index: -1;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0);
+    transition: .5s ease all;
+}
+
+
+.items li:hover::after{
+    transform: translate(-50%,-50%) scale(1);
+    letter-spacing: 20px;
+}
+
+
+.items a:hover{
+    color: crimson;
+}
+
+
+
+/* end header section */
+
+
 /* hero section */
 
 #hero {
